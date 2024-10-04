@@ -1,0 +1,615 @@
+
+
+/* Importamos la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Fuente principal para el texto */
+    font-weight: 400; /* Aplica el peso regular a todo el texto del cuerpo */
+    letter-spacing: 0px;
+    color: black;
+    background-color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 5px;
+    padding-right: 100px;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los enlaces del navbar */
+}
+
+.carrito {
+    height: 21px;
+    width: auto;
+    
+}
+
+/* Sección de la imagen principal */
+
+.imagen {
+    width: 100%;
+    height: auto;
+}
+
+/* Separador con el texto blanco */
+.separador {
+    text-align: center;
+    font-size: 48px;
+    padding: 60px;
+    background-color: white;
+    font-family: 'Montserrat Semibold', sans-serif; /* Títulos en Montserrat Semibold */
+    color: rgb(9, 9, 9);
+    background-color: white;
+}
+
+/* Sección con imagen y botón */
+div img {
+    width: 100%;
+    height: auto;
+}
+
+div button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat al botón */
+}
+
+div button:hover {
+    background-color: #555;
+}
+
+/* Sección dividida en dos: texto e imágenes */
+.titulo {
+    font-family: 'Montserrat Semibold', sans-serif; /* Títulos en Montserrat Semibold */
+    text-align: center;
+    font-size: 4em; /* Ajusta según tu diseño */
+    margin-bottom: 10px; /* Espaciado inferior opcional */
+    font-weight: 900; /* Aplica el peso regular a todo el texto del cuerpo */
+}
+
+/* Contenedor con posición relativa para superponer imágenes */
+.imagen-con-boton {
+    position: relative;
+    text-align: center;
+}
+
+.imagen-con-boton .imagen {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-con-boton .tiendaDos {
+    position: absolute;
+    top: 50%; /* Ajusta según sea necesario */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translate(40%, -50%); /* Centra la imagen sobre la imagen de fondo */
+    width: 400px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    z-index: 10; /* Asegura que esté encima de la imagen de fondo */
+}
+
+.campoCopas {
+    width: 100%;  /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    position: relative; /* Asegura que el contenedor ocupe el ancho completo sin afectar otros elementos */
+}
+
+.contenido-doble {
+    display: flex;
+    padding: 20px;
+}
+
+.contenido-doble .texto {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.contenido-doble .imagenes {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contenido-doble .imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+.contenido-doble .imagenes .img-abajo {
+    grid-column: span 2;
+}
+
+.img-abajo {
+    width: 100%;
+    height: auto;
+}
+
+/* Fondo con texto */
+.fondo-con-texto {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+.fondo-con-texto img {
+    width: 100%;
+    height: auto;
+}
+
+.fondo-con-texto .texto-sobre-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: 'Montserrat Semibold', sans-serif; /* Títulos en Montserrat Semibold */
+    font-weight: 900; /* Aplica el peso regular a todo el texto del cuerpo */
+    padding: 20px;
+}
+
+/* Sección imagen a la izquierda y texto a la derecha */
+.seccion-imagen-texto {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto; /* Espaciado superior e inferior, centrado horizontalmente */
+}
+
+.seccion-imagen-texto img {
+    width: 50%;
+}
+
+.seccion-imagen-texto .texto-boton {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.seccion-imagen-texto .texto-boton button {
+    display: block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat al botón */
+}
+
+.seccion-imagen-texto .texto-boton button:hover {
+    background-color: #555;
+}
+
+.img-pequena {
+    width: 50% !important; /* O el tamaño que prefieras */
+    height: auto;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.linea-separadora {
+    height: 20px; /* Altura suficiente */
+    width: 97%; /* Ancho total */
+    background: linear-gradient(to right, 
+                rgba(204, 204, 204, 0) 0%,  /* Transparente al inicio */
+                #62132d 0.7%,  /* Color sólido al inicio */
+                #62132d 99.3%,  /* Color sólido al final */
+                rgba(204, 204, 204, 0) 100%); /* Transparente al final */
+    border-radius: 20px; /* Redondeo completo */
+    margin: 20px auto; /* Espaciado superior e inferior, centrado horizontalmente */
+    position: relative; /* Asegura que el redondeo se respete */
+    overflow: hidden; /* Asegura que el contenido no se extienda fuera del borde redondeado */
+}
+
+.imagen-separadora-container {
+    position: relative; /* Necesario para el posicionamiento absoluto de los elementos hijos */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.imagen-separadora-container .imagen {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-separadora-container .btn-overlay {
+    position: absolute; /* Posiciona el botón de manera absoluta respecto al contenedor */
+    top: 70%; /* Ajusta la posición vertical del botón */
+    left: 60%; /* Ajusta la posición horizontal del botón */
+    transform: translate(-50%, -50%); /* Centra el botón con respecto a su propia dimensión */
+    z-index: 10; /* Asegura que el botón esté por encima de la imagen separadora */
+}
+
+.imagen-separadora-container .btn-overlay img {
+    width: 140%; /* Ajusta el tamaño del botón según sea necesario */
+    height: auto; /* Mantiene la proporción del botón */
+}
+
+.imagen-con-texto {
+    position: relative; /* Necesario para el posicionamiento absoluto de los elementos hijos */
+    display: inline-block; /* Ajusta el tamaño del contenedor al tamaño de la imagen */
+    width: 100%; /* O el ancho que prefieras */
+}
+
+.imagen-con-texto .imagen {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding-bottom: 40px;
+}
+
+.imagen-con-texto .texto-sobre-imagen,
+.imagen-con-texto .texto-sobre-imagen2 {
+    position: absolute; /* Posiciona el texto de manera absoluta sobre la imagen */
+    color: white; /* Cambia el color del texto según sea necesario */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente deseada */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto para mejor legibilidad sobre la imagen */
+    padding: 10px; /* Espacio alrededor del texto */
+}
+
+.imagen-con-texto .texto-sobre-imagen {
+    position: absolute; /* Posiciona el texto de manera absoluta sobre la imagen */
+    top: 10%; /* Ajusta la posición vertical del texto */
+    left: 25%; /* Ajusta la posición horizontal del texto */
+    transform: translateX(-45%); /* Ajusta la posición horizontal para centrar el texto dentro del ancho deseado */
+    max-width: 50%; /* Ajusta el ancho máximo del texto (puedes cambiar el valor según sea necesario) */
+    font-size: 70px; /* Tamaño de la fuente */
+    color: black; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    font-weight: 900; /* Peso del texto */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    padding: 10px; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+
+.imagen-con-texto .texto-sobre-imagen2 {
+    position: absolute; /* Posiciona el texto de manera absoluta sobre la imagen */
+    top: 40%; /* Ajusta la posición vertical del texto */
+    left: 25%; /* Ajusta la posición horizontal del texto */
+    transform: translateX(-45%); /* Ajusta la posición horizontal para centrar el texto dentro del ancho deseado */
+    max-width: 50%; /* Ajusta el ancho máximo del texto (puedes cambiar el valor según sea necesario) */
+    font-size: 50px; /* Tamaño de la fuente */
+    color: black; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    font-weight: 300; /* Peso del texto */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    padding: 10px; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.imagen-con-texto .texto-sobre-imagen3 {
+    position: absolute; /* Posiciona el texto de manera absoluta sobre la imagen */
+    top: 70%; /* Ajusta la posición vertical del texto */
+    left: 25%; /* Ajusta la posición horizontal del texto */
+    transform: translateX(-45%); /* Ajusta la posición horizontal para centrar el texto dentro del ancho deseado */
+    max-width: 50%; /* Ajusta el ancho máximo del texto (puedes cambiar el valor según sea necesario) */
+    font-size: 50px; /* Tamaño de la fuente */
+    color: black; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    font-weight: 900; /* Peso del texto */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    padding: 10px; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.imagen-con-texto .icono-whatsapp {
+    position: absolute; /* Posiciona el ícono de manera absoluta sobre la imagen */
+    bottom: 21%; /* Ajusta la posición vertical del ícono */
+    right: 85%; /* Ajusta la posición horizontal del ícono */
+    width: 50px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: auto; /* Mantiene la proporción del ícono */
+}
+
+.imagen-con-texto .icono-whatsapp img {
+    width: 100%; /* Ajusta el ancho del ícono al contenedor */
+    height: auto; /* Mantiene la proporción del ícono */
+}
+
+.cuerp {
+    text-align: justify; /* Justifica el texto */
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat al texto normal */
+    font-size: 2.7em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.imagen-con-superposicion {
+    position: relative; /* Establece el contenedor como relativo para el posicionamiento absoluto de las imágenes hijas */
+}
+
+.imagenArbusto {
+    width: 100%; /* Ajusta el tamaño de la imagen de fondo al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-con-superposicion {
+    position: relative; /* Permite a los elementos hijos con position: absolute posicionarse respecto a este contenedor */
+}
+
+.imagenArbusto {
+    width: 100%; /* Ajusta el tamaño de la imagen de fondo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+}
+
+.texto-superpuesto1, .texto-superpuesto2 {
+    position: absolute; /* Posiciona el texto de manera absoluta sobre la imagen */
+    z-index: 20; /* Asegura que el texto esté sobre las imágenes */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    padding: 10px; /* Espacio alrededor del texto */
+}
+
+.texto-superpuesto1 {
+    top: 94%; /* Ajusta la posición vertical del primer texto */
+    left: 18%; /* Ajusta la posición horizontal del primer texto */
+    font-weight: 900; /* Peso del texto */
+    color: white; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+}
+
+.texto-superpuesto2 {
+    top: 102%; /* Ajusta la posición vertical del segundo texto */
+    left: 18.4%; /* Ajusta la posición horizontal del segundo texto */
+    font-weight: 300; /* Peso del texto */
+    color: black; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+}
+
+.imagenSobrepuesta, .imagenSobrepuesta2 {
+    position: absolute; /* Posiciona la imagen sobre la imagen de fondo */
+    z-index: 10; /* Asegura que la imagen esté debajo del texto */
+}
+
+.imagenSobrepuesta {
+    top: 101%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%); /* Centra la imagen sobre la imagen de fondo */
+    width: 80%; /* Ajusta el tamaño de la imagen sobrepuesta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.imagenSobrepuesta2 {
+    top: 102%; /* Ajusta la posición vertical según sea necesario */
+    left: 74%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%); /* Centra la imagen sobre la imagen de fondo */
+    width: 15%; /* Ajusta el tamaño de la imagen sobrepuesta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Footer */
+footer {
+    background-color: #161c28;
+    color: white;
+    padding: 240px 40px; /* Ajustado para hacer el padding más razonable */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en dispositivos más pequeños */
+}
+
+footer .columna {
+    width: 20%;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    padding: 10px; /* Espacio interno alrededor del contenido de cada columna */
+}
+
+footer .columnaEspecial {
+    text-align: center;
+}
+
+
+footer .columna h4 {
+    font-family: 'Montserrat Semibold', sans-serif; /* Títulos en Montserrat Semibold */
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+footer .columna p.pFooter {
+    font-family: 'Montserrat', sans-serif; /* Texto en Montserrat */
+    color: #6a676b; /* Gris oscuro para el texto */
+    text-align: center;
+    line-height: 2;
+}
+
+footer .RepFooter {
+    text-decoration: underline; /* Subraya el texto */
+    max-width: 75%; /* Ajusta el valor según el límite de ancho deseado */
+    word-wrap: break-word; /* Para compatibilidad con navegadores antiguos */
+    display: inline-block; /* Permite establecer un ancho máximo en elementos en línea */
+}
+
+footer .AtencionFooter {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .imagen-con-boton .tiendaDos {
+        width: 80%; /* Reduce el ancho para pantallas más pequeñas */
+        transform: translate(-50%, -50%); /* Asegura que esté centrada */
+        top: 40%; /* Ajusta la posición vertical si es necesario */
+    }
+
+    .contenido-doble, .fondo-con-texto,
+    .seccion-imagen-texto {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas más pequeñas */
+    }
+
+    .contenido-doble .texto,
+    .contenido-doble .imagenes,
+    .fondo-con-texto .texto-sobre-fondo,
+    .seccion-imagen-texto .texto-boton {
+        width: 100%; /* Cada sección ocupa todo el ancho disponible */
+        padding-right: 0; /* Elimina el padding derecho para mantener la estética */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen,
+    .imagen-con-texto .texto-sobre-imagen2,
+    .imagen-con-texto .texto-sobre-imagen3 {
+        font-size: 15px; /* Ajusta el tamaño del texto */
+        left: 30%; /* Centra el texto horizontalmente */
+        transform: translateX(-50%); /* Aplica transformación para centrar */
+        max-width: 80%; /* Asegura que el texto no ocupe más del 80% del contenedor */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen {
+        top: 15%; /* Ajusta la posición vertical */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen2 {
+        top: 35%; /* Ajusta la posición vertical */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen3 {
+        top: 55%; /* Ajusta la posición vertical */
+    }
+
+    .texto-superpuesto1 {
+        font-size: 24px; /* Ajusta el tamaño del texto */
+        left: 50%; /* Centra el texto horizontalmente */
+        transform: translateX(-50%); /* Aplica transformación para centrar */
+        max-width: 80%; /* Asegura que el texto no ocupe más del 80% del contenedor */
+    }
+
+    .texto-superpuesto2 {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        left: 50%; /* Centra el texto horizontalmente */
+        transform: translateX(-50%); /* Aplica transformación para centrar */
+        max-width: 80%; /* Asegura que el texto no ocupe más del 80% del contenedor */
+    }
+
+    /* Ajusta la posición vertical según sea necesario */
+    .texto-superpuesto1 {
+        top: 90%; /* Ajusta la posición vertical */
+    }
+
+    .texto-superpuesto2 {
+        top: 95%; /* Ajusta la posición vertical */
+    }
+
+    footer {
+        padding: 60px 20px; /* Ajusta el padding para pantallas más pequeñas */
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos en el footer */
+    }
+
+    footer .columna {
+        width: 100%; /* Cada columna ocupa el 100% del ancho */
+        margin-bottom: 20px; /* Espaciado entre columnas */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .imagen-con-boton .tiendaDos {
+        width: 90%; /* Aumenta el ancho para dispositivos muy pequeños */
+        top: 30%; /* Ajusta la posición vertical según sea necesario */
+        font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
+    }
+
+    .contenido-doble .texto,
+    .fondo-con-texto .texto-sobre-fondo,
+    .seccion-imagen-texto .texto-boton {
+        font-size: 1.5em; /* Ajusta el tamaño del texto en dispositivos pequeños */
+    }
+
+    .contenido-doble .imagenes {
+        display: grid; /* Asegúrate de que siga siendo un grid */
+        grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+    }
+
+    .contenido-doble .imagenes img {
+        margin-bottom: 10px; /* Espaciado entre imágenes */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen,
+    .imagen-con-texto .texto-sobre-imagen2,
+    .imagen-con-texto .texto-sobre-imagen3 {
+        font-size: 15px; /* Ajusta aún más el tamaño del texto para pantallas pequeñas */
+        max-width: 80%; /* Asegúrate de que ocupe un 90% del contenedor */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen {
+        top: 10%; /* Ajusta la posición vertical para que no se superponga con otros elementos */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen2 {
+        top: 30%; /* Ajusta la posición vertical */
+    }
+
+    .imagen-con-texto .texto-sobre-imagen3 {
+        top: 50%; /* Ajusta la posición vertical */
+    }
+
+    .texto-superpuesto1 {
+        font-size: 20px; /* Ajusta aún más el tamaño del texto */
+        max-width: 90%; /* Asegúrate de que ocupe un 90% del contenedor */
+    }
+
+    .texto-superpuesto2 {
+        font-size: 16px; /* Ajusta aún más el tamaño del texto */
+        max-width: 90%; /* Asegúrate de que ocupe un 90% del contenedor */
+    }
+
+    /* Ajusta la posición vertical según sea necesario */
+    .texto-superpuesto1 {
+        top: 85%; /* Ajusta la posición vertical */
+    }
+
+    .texto-superpuesto2 {
+        top: 90%; /* Ajusta la posición vertical */
+    }
+
+    footer {
+        padding: 40px 10px; /* Reduce el padding para dispositivos móviles */
+    }
+
+    footer .columna h4 {
+        font-size: 1.5em; /* Ajusta el tamaño del texto en los títulos */
+    }
+
+    footer .columna p.pFooter {
+        font-size: 0.9em; /* Ajusta el tamaño del texto del párrafo */
+    }
+}
+
+

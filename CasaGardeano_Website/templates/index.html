@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Casa vinícola mexicana ubicada en Baja California. Descubre nuestros vinos artesanales y servicios personalizados.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardeano</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="{{ url_for('static', filename='img/GardeanoLogo.png') }}" alt="Logo Gardeano">
+        <div>
+            <a class="inicio" href="/">Inicio</a>
+            <a href="*">
+                <img class="carrito" src="{{ url_for('static', filename='img/bolsaTienda.png') }}" alt="Tienda">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Imagen de portada -->
+    <img src="{{ url_for('static', filename='img/Banner_inicio_Logo_completo.png') }}" alt="Imagen de portada" class="imagen">
+
+    <!-- Separador con texto -->
+    <div class="separador" style="font-weight: 900;">Soluciones Enológicas</div>
+
+    <!-- Imagen con botón -->
+    <div class="imagen-con-boton">
+        <img class="campoCopas" src="{{ url_for('static', filename='img/Banner1000x300px.png') }}" alt="Imagen" class="imagen">
+        <a href="*">
+            <img class="tiendaDos" src="{{ url_for('static', filename='img/Boton_Tienda_Online.png') }}" alt="Tienda">
+        </a>
+    </div>
+
+    <div class="separador"></div>
+
+    <!-- Sección dividida en dos -->
+    <div class="contenido-doble">
+        <div class="texto">
+            <p class="titulo">De Nuestra tierra a tu copa</p>
+            <p class="cuerp"> Somos una casa vinícola orgullosamente mexicana, situada en el corazón de Baja California,
+                nuestras uvas son cosechadas en el terruño del poblado de san Antonio de las Minas conocido
+                como la nueva ruta del vino de California, los vinos de casa Gardeano, son 100% artesanales,
+                de alta calidad y  cuidado desde la cosecha y en todos sus procesos hasta el embotellamiento.</p>
+        </div>
+        <div class="imagenes">
+            <img src="{{ url_for('static', filename='img/Imagen2,250x200px.png') }}" alt="Imagen 1">
+            <img src="{{ url_for('static', filename='img/Imagen1,250x200px.png') }}" alt="Imagen 2">
+            <video class="img-abajo" controls autoplay muted>
+                <source src="{{ url_for('static', filename='img/VideoVino.mp4') }}" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </div>
+
+    <!-- Fondo con texto -->
+    <div class="fondo-con-texto">
+        <img src="{{ url_for('static', filename='img/Banner1000x80px.png') }}" alt="Fondo">
+        <div class="texto-sobre-fondo">Un Viaje Por Nuestro Viñedo</div>
+    </div>
+
+    <!-- Sección con imagen y texto (repetida dos veces) -->
+    <div class="seccion-imagen-texto">
+        <img src="{{ url_for('static', filename='img/PersonalEnergumenoImagen1,620x475px.png') }}" alt="energumeno personal">
+        <div class="texto-boton">
+            <p class="titulo">Personal Gran Reserva</p>
+            <p class="cuerp">Personal gran reserva es un vino artesanal, con una evolución natural que
+                 representa toda la esencia del terruñio ensenadence, 24 meses en roble 
+                 francés y 24 meses en repisa resaltan sus tonos de especia y madera en 
+                 boca así como una alta mineralidad. La selección perfecta para maridar 
+                 con alimentos provenientes del mar.</p>
+                 <a href="*">
+                    <img class="img-pequena" src="{{ url_for('static', filename='img/Boton200x40px.png') }}" alt="Tienda">
+                </a>
+        </div>
+    </div>
+
+    <!-- Línea separadora -->
+<div class="linea-separadora"></div>
+
+    <div class="seccion-imagen-texto">
+        <img src="{{ url_for('static', filename='img/EnergúmenoReservaImagen2,620x475px.png') }}" alt="Energumento reserva">
+        <div class="texto-boton">
+            <p class="titulo">Energúmeno Reserva</p>
+            <p class="cuerp">Energúmeno reserva, un vino  artesanal y el predilecto de la casa, 
+                cuya esencia representa a casa gardeano, 18 meses en roble francés 
+                y la ausencia de correcciones  permitieron elevar su complejidad y 
+                sus sabores, que lo vuelven una opción obligada para acompañar con 
+                cortes finos de carne, platillos altos en grasa y quesos fuertes.</p>
+            <a href="*">
+                    <img class="img-pequena" src="{{ url_for('static', filename='img/Boton200x40px.png') }}" alt="Tienda">
+                </a>
+        </div>
+    </div>
+
+        <!-- Línea separadora -->
+<div class="linea-separadora"></div>
+
+    <div class="seccion-imagen-texto">
+        <img src="{{ url_for('static', filename='img/EnergumenoImagen3,620x475px.png') }}" alt="Imagen izquierda">
+        <div class="texto-boton">
+            <p class="titulo">Energumeno</p>
+            <p class="cuerp">Energúmeno, el más joven de la casa, cuya acidéz jovial la representa sus 10 
+                meses en roble americano, con una mineralidad moderada, propia de los vinos 
+                de Baja California, por lo que es perfecto para maridar con pescas blancas y postres.</p>
+            <a href="*">
+                    <img class="img-pequena" src="{{ url_for('static', filename='img/Boton200x40px.png') }}" alt="Tienda">
+                </a>
+        </div>
+    </div>
+
+        <!-- Línea separadora -->
+<div class="linea-separadora"></div>
+
+    <!-- Imagen separadora con botón -->
+<div class="imagen-separadora-container">
+    <img src="{{ url_for('static', filename='img/Imagen1000x180px.png') }}" alt="Imagen separadora" class="imagen">
+    <a href="*" class="btn-overlay">
+        <img src="{{ url_for('static', filename='img/Btn200x40px.png') }}" alt="Tienda">
+    </a>
+</div>
+
+<!-- Imagen con info, texto y otra imagen sobrepuesta -->
+<div class="imagen-con-texto">
+    <img src="{{ url_for('static', filename='img/BannerEnergumenocontrast221000x450px.png') }}" alt="Imagen adicional" class="imagen">
+    <div class="texto-sobre-imagen">¿Quieres ver tu marca en un vino?</div>
+    <div class="texto-sobre-imagen2">¡Pregunta por nuestro servicio de personalización!</div>
+    <div class="texto-sobre-imagen3">55-7411-1152</div>
+    <div class="icono-whatsapp">
+        <img src="{{ url_for('static', filename='img/IconoWhatsapp.png') }}" alt="Whatsapp">
+    </div>
+</div>  
+    <!-- imagen final -->
+    <div class="imagen-con-superposicion">
+        <div class="texto-superpuesto1">¿Tienes un restaurante o bar?</div>
+        <div class="texto-superpuesto2">Pregunta por nuestras catas y eventos</div>
+        <img src="{{ url_for('static', filename='img/ImagenVinedo1000x420px.png') }}" alt="Imagen adicional" class="imagenArbusto">
+        <img src="{{ url_for('static', filename='img/DiseñoBanner836x115px.png') }}" alt="Imagen sobrepuesta" class="imagenSobrepuesta">
+        <img src="{{ url_for('static', filename='img/Botoncorreoelectronico200x40px.png') }}" alt="Imagen sobrepuesta2" class="imagenSobrepuesta2">
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="columna">
+            <h4 class="GardeanoFooter">GARDEANO</h4>
+            <p class="pFooter">Since @2019</p>
+        </div>
+        <div class="columna">
+            <h4 class="EmpresaFooter">Empresa</h4>
+            <p class="pFooter">Viñedo el refugio, 22253 Tijuana, B.C., México<br>ventas@casagardeano.com</p>
+        </div>
+        <div class="columna">
+            <h4 class="AtencionFooter">Atención Morelos</h4>
+            <p class="pFooter">(+52)777-1409-721<br>(+52)777-2338-041</p>
+        </div>
+        <div class="columna">
+            <div class="columnaEspecial">
+            <h4 class="RepFooter">Atención toda la República Mexicana</h4>
+            <p class="pFooter">(+52)55-7411-1152</p>
+            </div>
+        </div>
+        <div class="columna">
+            <h4 class="InfoFooter">Más Información</h4>
+            <p class="pFooter">Términos y condiciones<br>Política de Privacidad</p>
+        </div>
+    </footer>
+</body>
+</html>
+
